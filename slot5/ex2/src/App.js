@@ -7,13 +7,17 @@ import Exercise8 from "./component/Exercise8";
 function App() {
   return (
     <div>
-      <Exercise4 />
-      <Exercise5 />
-      <Exercise6 />
-      <Exercise7 />
-      <Exercise8 />
+      <p>Bai tap ve nha Lab:</p>
+      
+      { <Exercise4 /> }
+      { <Exercise5 /> }
+      { <Exercise6 /> }
+      { <Exercise7 /> }
+      { <Exercise8 /> }
+
     </div>
   );
 }
+
 
 export default App;
