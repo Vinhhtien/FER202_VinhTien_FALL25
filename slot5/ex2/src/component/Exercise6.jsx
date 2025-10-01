@@ -13,6 +13,10 @@ const companies = [
 function Exercise6() {
   const sorted = [...companies].sort((a, b) => a.end - b.end);
   const top3 = sorted.slice(0, 3);
+<<<<<<< HEAD
+=======
+  const financeComp = companies.filter(c => c.category === "Finance");
+>>>>>>> cf7270f (add slot7)
 
   return (
     <div>
@@ -25,6 +29,17 @@ function Exercise6() {
           </li>
         ))}
       </ul>
+<<<<<<< HEAD
+=======
+      <p>Danh sách công ty có danh mục là Finance:</p>
+      <ul>
+        {financeComp.map((c,index) => (
+          <li key={index}>
+            {c.name} - {c.category}
+          </li>
+        ))}
+      </ul>
+>>>>>>> cf7270f (add slot7)
     </div>
   );
 }
