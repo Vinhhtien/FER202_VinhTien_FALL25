@@ -1,0 +1,86 @@
+/* màu nền theo ảnh */
+.ex5-topbar { background: #edd1b6; }
+.bg-orange, .ex5-hero { background: #e38934; }
+.ex5-footer { background: #e38934; color: #fff; }
+
+/* bo cục, khoảng cách */
+.ex5-hero img { max-height: 420px; object-fit: cover; width: 100%; }
+
+/* card học sinh sát giống ảnh */
+.card img { height: 360px; object-fit: cover; }
+
+/* thu gọn chiều rộng nội dung để giống PDF */
+.ex5-topbar .container,
+.ex5-hero .container,
+.ex5-footer .container,
+.container { max-width: 980px; }
+/* Topbar nền be */
+.ex5-topbar { 
+  background: #edd1b6;
+  min-height: 64px;              /* cao hơn */
+}
+
+/* Cho riêng topbar rộng hơn phần nội dung bên dưới */
+.ex5-topbar .container-xxl {
+  max-width: 1280px;             /* bạn có thể đổi 1200/1320/1400 tuỳ ý */
+}
+
+/* Đậm TẤT CẢ link trong topbar */
+.ex5-topbar nav a {
+  font-weight: 700;   /* 600 = semibold, 700 = bold */
+}
+
+/* Đậm chữ "Search:" bên phải (span đang có class 'small') */
+.ex5-topbar .small {
+  font-weight: 600;
+}
+
+/* Nếu CHỈ muốn "Trang chủ" đậm */
+.ex5-topbar nav a:first-child {
+  font-weight: 700;
+}
+
+/* Nếu bạn gắn class 'active' cho link nào thì link đó đậm */
+.ex5-topbar nav a.active {
+  font-weight: 700;
+}
+
+
+/* Footer đúng kiểu ảnh mẫu: nền cam, chữ đen */
+.ex5-footer {
+  background: #e38934;
+  color: #212529;              /* chữ đen */
+}
+
+/* Link trong footer cũng là màu đen */
+.ex5-footer a {
+  color: #212529;
+  text-decoration: none;
+}
+.ex5-footer a:hover { text-decoration: underline; }
+
+/* Tiêu đề cột trái đậm hơn */
+.ex5-footer h6 { 
+  color: #212529; 
+  font-weight: 700; 
+}
+
+/* Dòng bản quyền ngăn cách nhẹ */
+.ex5-footer .sep {
+  border-top: 1px solid rgba(0,0,0,.15);
+  margin-top: 12px;
+  padding-top: 12px;
+}
+
+/* Nhóm icon bên phải: tròn nhẹ, cân đối (không cần cài icon lib) */
+.ex5-footer .social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: rgba(0,0,0,.06);
+  margin-left: 8px;
+  font-weight: 700;
+}
+.ex5-footer .social a:hover { background: rgba(0,0,0,.12); }

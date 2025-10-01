@@ -1,0 +1,32 @@
+/* ---- EX3 tuning ---- */
+.ex3-banner {
+  border-radius: 10px;
+}
+
+.ex3-grid .cell {
+  background: #dedfe2;            /* xám nhạt giống hình */
+  border: 1px solid #b9b9b9;      /* viền rõ hơn */
+  height: 72px;                   /* chiều cao các ô */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.ex3-grid-wrapper {
+  max-width: 1200px;   /* chỉnh nhỏ lại */
+  margin: 0 auto;     
+}
+
+
+.ex3-footer {
+  background: #d7c7c7;            /* dải tím nhạt */
+  border: 1px solid #b9a9a9;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: .5px;
+}
+
+/* (Có thể giữ lại phần CRA cũ dưới đây hoặc xoá; không ảnh hưởng) */
+.App {
+  text-align: center;
+}

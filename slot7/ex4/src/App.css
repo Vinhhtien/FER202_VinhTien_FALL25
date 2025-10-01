@@ -1,0 +1,19 @@
+/* Header cam đậm */
+.ex4-header {
+  background: #e38934;
+}
+.ex4-logo {
+  max-width: 500px; /* chỉnh kích thước logo */
+}
+
+/* Footer vàng nhạt */
+.ex4-footer {
+  background: #eec27f;
+}
+
+/* Đồng bộ max-width nội dung */
+.ex4-header .container,
+.ex4-footer .container,
+main.container {
+  max-width: 900px;
+}
