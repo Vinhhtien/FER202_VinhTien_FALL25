@@ -1,0 +1,15 @@
+/* Giới hạn bề ngang để giống ảnh mẫu */
+.ex2-container { max-width: 980px; }
+
+/* Logo to, căn giữa, giữ tỉ lệ */
+.logo-row img {
+  height: 190px;          /* bạn có thể tăng 210/220 nếu muốn to hơn */
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Responsive: nhỏ lại trên màn hình bé */
+@media (max-width: 576px) {
+  .logo-row img { height: 120px; }
+}

@@ -1,0 +1,28 @@
+/* Giới hạn bề ngang giống ảnh mẫu */
+.ex1-wrapper,
+.container {
+  max-width: 980px;
+  margin: auto;           /* căn giữa */
+
+}
+
+
+.cell {
+  background: var(--bs-secondary-bg, #dee2e6);
+  border: 1px solid rgba(0,0,0,.125);
+  /* center content */
+  display: flex;
+  align-items: center;   /* giữa theo trục dọc */
+  justify-content: center; /* giữa theo trục ngang */
+  text-align: center;
+  min-height: 64px;      /* chiều cao đều, có thể chỉnh */
+  border-radius: .25rem; /* bo nhẹ cho đẹp (tùy chọn) */
+}
+/* Thanh "Created by ABC!" */
+.ex1-credit {
+  background: #d7c7c7;      /* màu hồng xám nhạt như ảnh */
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  padding: .5rem 1rem;
+}
