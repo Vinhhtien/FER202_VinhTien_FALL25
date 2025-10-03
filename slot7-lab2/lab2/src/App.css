@@ -1,0 +1,86 @@
+/* =========================
+   Layout chung
+========================= */
+:root { --container-max: 1100px; }
+
+.container { max-width: var(--container-max); }
+
+/* =========================
+   Navbar
+========================= */
+.navbar .nav-link { font-size: .95rem; }
+.navbar-brand { font-weight: 700; }
+
+/* =========================
+   HERO (Carousel)
+========================= */
+.hero-img {                /* ảnh hero giống mẫu */
+  max-height: 420px;
+  object-fit: cover;
+}
+.text-shadow { text-shadow: 0 2px 6px rgba(0,0,0,.8); }
+.hero-caption { bottom: 28%; }  /* kéo caption lên cao một chút */
+
+/* chấm chỉ báo (indicators) */
+.carousel-indicators [data-bs-target]{
+  width: 10px; height: 10px; border-radius: 50%;
+}
+.carousel-indicators .active { opacity: 1; }
+
+/* responsive cho hero */
+@media (max-width: 768px){
+  .hero-img { max-height: 320px; }
+  .hero-caption { bottom: 14%; }
+}
+
+/* =========================
+   Sections nền xám (Our Menu + Booking)
+========================= */
+.section-dark,
+.booking-dark { background: #2f2f2f; }
+
+.section-dark h3,
+.booking-dark h3 { color: #fff; }
+
+/* =========================
+   Cards món ăn (Our Menu)
+========================= */
+.menu-img { height: 190px; object-fit: cover; }     /* ảnh card đều nhau */
+.card-title { font-size: .95rem; }                  /* tiêu đề gọn */
+.card.shadow-sm { border: 0; }                      /* viền sạch hơn */
+.card .btn { width: 100%; }                         /* nút Buy full width */
+
+/* badge SALE/NEW rõ nét */
+.badge { font-weight: 700; letter-spacing: .5px; }
+
+/* giá cũ/mới */
+.price-old { color: #6c757d; text-decoration: line-through; font-size: .9rem; }
+.price-new { color: #ffc107; font-weight: 600; }
+
+/* =========================
+   Booking form
+========================= */
+.booking-dark .form-control,
+.booking-dark .form-select {
+  background: #fff;
+  color: #212529;
+}
+.booking-dark textarea.form-control { min-height: 180px; }   /* hộp nhập to như mẫu */
+.booking-dark .btn-warning { font-weight: 600; }
+
+/* khoảng cách đẹp giữa các section tối liên tiếp */
+.section-dark + .booking-dark { padding-top: 3rem; }
+
+/* =========================
+   Footer (nếu dùng)
+========================= */
+.footer-dark { background: #2f2f2f; color: #212529; }
+.footer-dark a { color: #212529; text-decoration: none; }
+.footer-dark a:hover { text-decoration: underline; }
+
+/* =========================
+   Nhỏ gọn container trên mobile
+========================= */
+@media (max-width: 576px){
+  .container { padding-left: 1rem; padding-right: 1rem; }
+}
