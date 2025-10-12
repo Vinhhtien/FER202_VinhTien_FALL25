@@ -1,0 +1,13 @@
+/* src/App.css */
+body {
+  background: #f6f7fb;
+}
+
+.app .form-control::placeholder {
+  color: #9aa3af;
+}
+
+.app .alert-warning {
+  background: #fdecc8;
+  border-color: #f7d08a;
+}
