@@ -1,4 +1,4 @@
-// src/pages/AccountPage.jsx
+
 import { useState, useMemo } from 'react';
 import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';

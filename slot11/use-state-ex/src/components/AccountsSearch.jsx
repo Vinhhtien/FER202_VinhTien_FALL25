@@ -63,7 +63,9 @@ export default function AccountsSearch() {
             <Form.Control
               placeholder="Nhập username cần tìm…"
               value={q}
-              onChange={(e) => setQ(e.target.value)}
+              onChange={(e) => {
+                console.log(e.target.value);
+                setQ(e.target.value)}}
             />
             <Button variant="outline-secondary" onClick={() => setQ("")}>
               Xoá

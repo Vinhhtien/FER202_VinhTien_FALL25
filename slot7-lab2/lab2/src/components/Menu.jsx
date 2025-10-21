@@ -35,6 +35,7 @@ export default function Menu() {
         <h3 className="text-white mb-4">Our Menu</h3>
 
         <div className="row g-4">
+          {/* lay tung item */}
           {items.map((p, i) => (
             <div className="col-12 col-sm-6 col-lg-3 d-flex" key={i}>
               <div className="card w-100 h-100 shadow-sm position-relative">

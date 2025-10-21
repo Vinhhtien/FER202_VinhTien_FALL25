@@ -1,36 +1,98 @@
-// src/data/movies.js
-export const movies = [
-    {
-        id: 1,
-        title: 'Galactic Wars',
-        description:
-        'Epic space battles decide the fate of a fractured galaxy as rival factions clash for control. Pilots, droids and rebels unite.',
-        poster: 'https://i.pinimg.com/736x/4d/a5/69/4da569dde4393d19d79bf892e7a46a24.jpg',
-        genre: 'Sci-Fi',
-        year: 2022,
-        country: 'USA',
-        duration: 132,
-    },
-    {
-        id: 2,
-        title: 'Laugh Out Loud',
-        description:
-        'A feel-good comedy about friendship, failure, and second chances in a quirky small town with big personalities.',
-        poster: 'https://i.pinimg.com/736x/42/9c/5a/429c5abeb7c64236a9c052f2d29297e1.jpg',
-        genre: 'Comedy',
-        year: 2021,
-        country: 'UK',
-        duration: 105,
-    },
-    {
-        id: 3,
-        title: 'Deep Blue',
-        description: 'A gripping open-sea survival drama where hope and teamwork are pushed to the limit.',
-        poster: 'https://i.pinimg.com/736x/ce/4e/99/ce4e9936f2dd8540188fe544731cb075.jpg',
-        genre: 'Drama',
-        year: 2019,
-        country: 'Australia',
-        duration: 118,
-    },
 
+export const movies = [
+  {
+    id: 1,
+    title: 'Galactic Wars',
+    description: 'Epic space battles decide the fate of a fractured galaxy as rival factions clash for control.',
+    poster: 'https://i.pinimg.com/736x/70/9c/d6/709cd6e2c5e12515f708ca3545d740dd.jpg',
+    genre: 'Sci-Fi',
+    year: 2022,
+    country: 'USA',
+    duration: 132
+  },
+  {
+    id: 2,
+    title: 'Laugh Out Loud',
+    description: 'A feel-good comedy about friendship, failure, and second chances in a small town.',
+    poster: 'https://i.pinimg.com/1200x/d6/79/a1/d679a107eb5415f3ef8c4b645f485855.jpg',
+    genre: 'Comedy',
+    year: 2021,
+    country: 'UK',
+    duration: 105
+  },
+  {
+    id: 3,
+    title: 'Deep Blue',
+    description: 'A gripping survival drama set far from shore when a voyage goes wrong.',
+    poster: 'https://i.pinimg.com/736x/46/fa/b5/46fab5efbfbbc7d8a49cb1d37b7d1f97.jpg',
+    genre: 'Drama',
+    year: 2019,
+    country: 'Australia',
+    duration: 118
+  },
+  {
+    id: 4,
+    title: 'Haunted House',
+    description: 'A teen dares to spend one night in a house with a dark past—and uncovers the truth.',
+    poster: 'https://i.pinimg.com/736x/7e/5e/89/7e5e8911c811cef85d6f5a2c547da71f.jpg',
+    genre: 'Horror',
+    year: 2020,
+    country: 'Canada',
+    duration: 98
+  },
+  {
+    id: 5,
+    title: 'City of Love',
+    description: 'Two strangers meet in a sleepless city and rewrite their plans for life and love.',
+    poster: 'https://i.pinimg.com/1200x/b6/a6/22/b6a622aa08190c4ae4f6ba1d524267d3.jpg',
+    genre: 'Romance',
+    year: 2018,
+    country: 'France',
+    duration: 110
+  },
+  {
+    id: 6,
+    title: 'The Time Traveler',
+    description: 'A brilliant scientist discovers a way to bend time—at a cost no one could foresee.',
+    poster: 'https://i.pinimg.com/736x/06/61/90/06619013e090f6b57a994c105d65a70d.jpg',
+    genre: 'Sci-Fi',
+    year: 2023,
+    country: 'USA',
+    duration: 124
+  },
+  {
+    id: 7,
+    title: 'Street Runner',
+    description: 'An ex-courier is forced back into the fast lane for one last job across the neon city.',
+    poster: 'https://i.pinimg.com/736x/37/fa/5a/37fa5a69ca10ab2035ed732f60fa32f6.jpg',
+    genre: 'Action',
+    year: 2021,
+    country: 'Japan',
+    duration: 102
+  },
+  {
+    id: 8,
+    title: 'Hidden Truth',
+    description: 'A reporter unravels a conspiracy that powerful people will do anything to keep buried.',
+    poster: 'https://i.pinimg.com/736x/cd/33/c6/cd33c6323c25199ba29ab230d2caf7b8.jpg',
+    genre: 'Thriller',
+    year: 2022,
+    country: 'Germany',
+    duration: 115
+  },
+  {
+    id: 9,
+    title: 'Kingdom of Ash',
+    description: 'A fallen prince must unite rival clans to reclaim a cursed land and his destiny.',
+    poster: 'https://i.pinimg.com/736x/f7/21/bc/f721bcaf4729416e543c31faa6c136a3.jpg',
+    genre: 'Comedy',
+    year: 2020,
+    country: 'New Zealand',
+    duration: 141
+  }
+];
+
+export const allGenres = [
+  'All', 'Action', 'Animation', 'Comedy',  'Drama',
+  'Fantasy', 'Horror', 'Romance', 'Sci-Fi', 'Thriller'
 ];

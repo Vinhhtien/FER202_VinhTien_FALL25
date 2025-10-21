@@ -28,7 +28,7 @@ function validate(form) {
 
 export default function SignupForm() {
   const [form, setForm] = useState({ username: "", email: "", password: "", confirm: "" });
-  const [touched, setTouched] = useState({});
+  // const [touched, setTouched] = useState({});
   const [showToast, setShowToast] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
@@ -41,15 +41,15 @@ export default function SignupForm() {
   };
   const onBlur = (e) => {
     const { name } = e.target;
-    setTouched((prev) => ({ ...prev, [name]: true }));
+    // setTouched((prev) => ({ ...prev, [name]: true }));
   };
 
   const onSubmit = (e) => {
     e.preventDefault();
-    setTouched({ username: true, email: true, password: true, confirm: true });
+    // setTouched({ username: true, email: true, password: true, confirm: true });
     if (isValid) {
       // reset -> bật lại để Toast luôn hiện (kể cả submit liên tiếp)
-      setShowToast(false);
+      // setShowToast(false);
       setTimeout(() => setShowToast(true), 0);
       setShowModal(true);
     }
@@ -57,7 +57,7 @@ export default function SignupForm() {
 
   const onCancel = () => {
     setForm({ username: "", email: "", password: "", confirm: "" });
-    setTouched({});
+    // setTouched({});
   };
 
   return (
@@ -76,7 +76,7 @@ export default function SignupForm() {
                       value={form.username}
                       onChange={onChange}
                       onBlur={onBlur}
-                      isInvalid={touched.username && !!errors.username}
+                      // isInvalid={touched.username && !!errors.username}
                       placeholder="vd: tien"
                     />
                     <Form.Control.Feedback type="invalid">{errors.username}</Form.Control.Feedback>
@@ -90,7 +90,7 @@ export default function SignupForm() {
                       value={form.email}
                       onChange={onChange}
                       onBlur={onBlur}
-                      isInvalid={touched.email && !!errors.email}
+                      // isInvalid={touched.email && !!errors.email}
                       placeholder="vd: a@example.com"
                     />
                     <Form.Control.Feedback type="invalid">{errors.email}</Form.Control.Feedback>
@@ -104,7 +104,7 @@ export default function SignupForm() {
                       value={form.password}
                       onChange={onChange}
                       onBlur={onBlur}
-                      isInvalid={touched.password && !!errors.password}
+                      // isInvalid={touched.password && !!errors.password}
                       placeholder="Ít nhất 8 ký tự…"
                     />
                     <Form.Control.Feedback type="invalid">{errors.password}</Form.Control.Feedback>
@@ -122,7 +122,7 @@ export default function SignupForm() {
                       value={form.confirm}
                       onChange={onChange}
                       onBlur={onBlur}
-                      isInvalid={touched.confirm && !!errors.confirm}
+                      // isInvalid={touched.confirm && !!errors.confirm}
                       placeholder="Nhập lại password"
                     />
                     <Form.Control.Feedback type="invalid">{errors.confirm}</Form.Control.Feedback>

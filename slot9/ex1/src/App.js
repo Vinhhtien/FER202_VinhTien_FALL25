@@ -1,4 +1,4 @@
-// src/App.js
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css';
@@ -18,7 +18,8 @@ function App() {
           <Route path="/account" element={<AccountPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          {/* Thêm các route cho các link khác nếu cần */}
+
+          {/* neu co page profiles,login,favourite */}
           <Route path="/profiles" element={<div>Profiles Page</div>} />
           <Route path="/password" element={<div>Change Password</div>} />
           <Route path="/login" element={<div>Login Page</div>} />
@@ -31,3 +32,5 @@ function App() {
 }
 
 export default App;
+
+

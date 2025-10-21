@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { Link } from 'react-router-dom'; // Thay useNavigate bằng Link
+import { Link } from 'react-router-dom'; 
 
 export default function AppNavBar() {
   return (
@@ -41,7 +41,7 @@ export default function AppNavBar() {
             id="accounts-dropdown"
             align="end"
           >
-            {/* Sử dụng as={Link} cho dropdown items */}
+            {/* Sử dụng as={Link} cho dropdown items nếu có cải tiến */}
             <NavDropdown.Item as={Link} to="/profiles">
               Manage Your Profiles
             </NavDropdown.Item>

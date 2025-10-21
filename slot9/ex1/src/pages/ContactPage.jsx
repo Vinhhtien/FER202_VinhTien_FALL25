@@ -1,7 +1,10 @@
-// src/pages/ContactPage.jsx
+
+
+import AppNavBar from "../components/AppNavBar";
 export default function ContactPage() {
   return (
     <div>
+      <AppNavBar/>
       <h3>Contact</h3>
       <p className="text-secondary">Email us at contact@example.com</p>
     </div>

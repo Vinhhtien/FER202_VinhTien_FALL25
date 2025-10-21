@@ -17,7 +17,7 @@ function reducer(state, action) {
 }
 
 export default function LightSwitch() {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, trangthai] = useReducer(reducer, initialState);
 
   return (
     <div>
@@ -26,21 +26,19 @@ export default function LightSwitch() {
 
       <div className="d-flex justify-content-center gap-3 mt-4 flex-wrap">
         <Button
-          onClick={() => dispatch({ type: "CHUYEN_DOI" })}
+          onClick={() => trangthai({ type: "CHUYEN_DOI" })}
         >
           Chuyển đổi
         </Button>
 
         <Button
-          disabled={state.BatDen}
-          onClick={() => dispatch({ type: "BAT_DEN" })}
+          onClick={() => trangthai({ type: "BAT_DEN" })}
         >
           Bật đèn
         </Button>
 
         <Button
-          disabled={!state.BatDen}
-          onClick={() => dispatch({ type: "TAT_DEN" })}
+          onClick={() => trangthai({ type: "TAT_DEN" })}
         >
           Tắt đèn
         </Button>

@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Menu from './components/Menu';
 import Booking from './components/Booking';
-
+import Footer from './components/Footer';
 function App() {
   return (
     <>
@@ -14,6 +14,7 @@ function App() {
       <Hero />
       <Menu />
       <Booking />
+      <Footer />
     </>
   );
 }
